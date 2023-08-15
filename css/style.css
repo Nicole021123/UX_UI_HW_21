@@ -1,0 +1,303 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0% auto;
+    background-image: linear-gradient(#513c9b,#6d3ea6,#a42d93, #ac288c,#fe0a62,#fd145b,#f83347);
+}
+  
+  .navigation {
+      
+      width: 100%;
+      top: 0px;
+      position: fixed;
+      position: sticky;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 20px; 
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 25px;
+      justify-content: space-between;
+      }
+  
+  .inline-block {
+      display: inline-block;
+      vertical-align: top;
+      padding: 3px 10px 0px 10px;
+  }
+  
+  .lorisLogo {
+    width: 10px;
+    }
+  
+  .name{
+    text-align: center;
+    vertical-align: middle;
+    }
+  
+  nav ul {
+    color: #f1caaa;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    list-style: none;
+    float: right;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    }
+  
+  .heroImg {
+        padding-bottom: 50px;
+        align-items: center;
+        background-color: #fffff;
+   }
+  
+  .content {
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 60px;
+      text-align: center;
+  }
+  
+  footer {
+      background-color: rgb(105, 100, 100);
+      width: 100%;
+      bottom: 0px;
+      position: sticky;
+      position: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+  }
+  
+  footer ul {
+    border-bottom-width: 10px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+  }
+  
+  a:link {
+      color: white;
+      text-decoration: none;
+  }
+  a:visited {
+      color: white;
+      text-decoration: none;
+  }
+  a:hover {
+      color: white;
+      text-decoration: none;
+  }
+  a:active {
+      color: white;
+      text-decoration: none;
+  }
+  
+  html, body {
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      overflow-x: hidden;
+    }
+  
+  h1{
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    font-size: 45px;
+    text-align: center;
+    color: black;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+   
+  * {
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    padding: 0 5px 0 0;
+  }
+  
+  #mySkills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3% 3% 5% 3%;
+  }
+  
+  #mySkills-container > h1 {
+    text-align: center;
+    width: 98%;
+    font-size: 60px;
+    letter-spacing: .10em;
+    padding: 0 0 3% 0;
+  }
+  
+  #mySkills-container > div {
+    /* border: blue dashed 1.5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 31%;
+    min-height: 150px;
+  }
+  
+  #mySkills-container img { 
+    width: 200px;
+    padding: 0 0 6% 0;
+    align-self: center;
+    border-radius: 8px;
+  }
+  
+  #mySkills-container p {
+    padding: 3% 5% 0 5%;
+  }
+  
+  /* responsive css properties done with media queries below */
+  @media only screen and (max-width: 600px) {
+    #mySkills-container {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 8% 0% 5% 0%;
+    }
+    #mySkills-container > h1 {
+      padding: 0% 0% 8% 0%;
+    }
+    
+    #mySkills-container > div {
+      max-width: 100%;
+      padding: 0% 0% 0% 0%;
+  
+    }
+    
+    #mySkills-container img {
+      padding: 0% 0% 3% 0%;
+    }
+    
+    #mySkills-container p {
+      padding: 2% 7% 10% 8%;
+    }
+  }
+  
+  /* GRID container for section */
+
+    #myWork-Grid {
+    padding: 4%;
+    grid-template-rows: minmax(max-content, .5fr) repeat(3, minmax(max-content, 3fr)) minmax(max-content, .5fr);
+    gap: 2%;
+    display: grid;
+    width: 100vw;
+  }
+
+ 
+  /* NESTED GRID container for card */
+  .nested-grid {
+    padding: 5% 3%;
+    gap: 3%;
+    height: min-content; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-items: center;
+    background-color: white;
+    border: solid grey 2px;
+    border-radius: 10px;
+    box-shadow: .55em .55em #bbb;
+  }
+  
+  .myWork-Grid {
+    width: 100%;
+    /*height: 3em;*/
+    align-self: center;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 0.1em;
+  }
+  
+
+  .cardLeft-img {
+    text-align: left;
+    width: 100%; 
+    padding-left: 20px;
+    object-fit:contain; /* ensures image is always proportionate when size changes due to responsiveness */
+  }
+
+  .cardRight-details {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+  } 
+  .cardTitle {
+    line-height: 1em;
+  }
+  .cardCTA {
+    align-self: end;
+    background-color: white;
+    margin-top: 3%;
+    width: 50%;
+  }
+  
+  button { 
+    padding: 1em 1.5em; /* adds space between text and border of button */
+    border: solid 1.5px silver;
+    border-radius: 10px; /* rounds corners of button */
+    box-shadow: .5em .5em #bbb; 
+    text-align: center; /* centers text in button */
+    letter-spacing: .13em; 
+    white-space: nowrap;
+    width: 50%;
+    }
+  
+ 
+  .sectionCTA {
+    width: 25%;
+    background-color:white;
+    justify-self: center;
+    align-self: center;
+    padding: 15px;
+    margin: 16px;
+    white-space: nowrap;
+  }
+
+  h3 {
+      color: pink;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: xx-large;
+    }
+
+.logo-name-together {
+      display: flex;
+      align-items: center;
+    }
+
+h4 {
+  color: black;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: xx-large;
+}
+
+#CSLink {
+  color: black;
+  text-decoration: none;
+}
+
+#CSLink visited {
+  color: black;
+  text-decoration: none;
+}
